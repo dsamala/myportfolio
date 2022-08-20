@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import Navbar from './components/NavBar/Navbar';
@@ -10,9 +9,9 @@ function App() {
       <Router>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Main/>} />
-            <Route path="/projects" element={<Main/>} />
-            <Route path="/skills" element={<Main/>} />
+            <Route path="/" element={<Main />} />
+            <Route path="/projects" element={<Main />} />
+            <Route path="/skills" element={<Main />} />
           </Routes>
       </Router>
     </div>
