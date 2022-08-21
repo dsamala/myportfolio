@@ -24,23 +24,26 @@ export default function Landing() {
                     <h6>{headerData.title}</h6>
                     <h1>{headerData.name}</h1>
                     <p>{headerData.description}</p>
-                </div>
-                <div className="lcr-buttoncontainer">
+                
+                <div className="lcr-buttonContainer">
                     <a
                         href={headerData.resumePdf}
                         download='resume'
                         target='_blank'
-                        rel='noreferrer'>
-                            <Button className="resume">Download CV</Button>
+                        rel='noreferrer'
+                        className="buttons">
+                            <Button variant="contained" className="buttons">Download CV</Button>
                     </a>
                     <NavLink 
                         to="/#contacts"
                         smooth={true}
                         spy='true'
                         duration={2000}
+                        className="buttons"
                         >
-                            <Button className="contact">Contact</Button>
+                            <Button variant="contained">Contact</Button>
                     </NavLink>
+                    </div>
                 </div>
             </div>
         </div>
