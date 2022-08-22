@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { NavHashLink as NavLink } from "react-router-hash-link";
 
 export default function Navbar() {
   return (
@@ -16,9 +16,8 @@ export default function Navbar() {
               <h1>DS</h1>
             </div>
             <div className="menu-items">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/projects">Projects</Link></li>
-                <li><Link to="/skills">Experience</Link></li>
+                <li><NavLink to="/#skills" smooth={true} spy='true' duration={2000}>Skills</NavLink></li>
+                <li><NavLink to="/#projects" smooth={true} spy='true' duration={2000}>Projects</NavLink></li>
             </div>
         </div>
     </div>

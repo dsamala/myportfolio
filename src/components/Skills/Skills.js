@@ -7,7 +7,7 @@ import { skillsImage } from "../../utils/skillsImage"
 
 export default function Skills() {
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <div className="skillsHeader">
         <h2>Skills</h2>
       </div>

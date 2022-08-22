@@ -1,0 +1,145 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 2rem;
+}
+
+
+.projects-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+}
+
+
+.projects-header h1 {
+    margin-bottom: 40px;
+    font-size: 3.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.projects-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-bodyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 992px) {
+    .projects--bodyContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .projects--header h1 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects--header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+
+.projectCard{
+    box-shadow: 4px 4px 8px rgba(36, 3, 3, 0.2);
+    width: 304px;
+    height: 360px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem 2rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+
+.projectContent > h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.525rem;
+    line-height: 110%;
+    text-align: center;
+}
+
+.projectContent > img {
+    width: 100%;
+    height: 60%;
+    transition: opacity 0.7s 0.3s;
+}
+
+.projectCard:hover img{
+    opacity: 0;
+}
+
+.project-link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.project-link-btn > a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.5s 0.3s;
+}
+
+.projectCard:hover .project-link-btn a:nth-child(2) {
+    transform: translateX(-140px) scale(1.1) !important;
+}
+
+.projectCard .project-desc{
+    position: absolute;
+    width: 95%;
+    height: 160px;
+    left: 0;
+    top: 0;
+    transform: translate(-110%,40%);
+    padding: 15px;
+    border-radius: 0 20px 20px 0;
+    transition: transform 0.9s;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
