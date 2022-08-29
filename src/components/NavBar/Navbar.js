@@ -1,6 +1,7 @@
 import React from 'react'
 import { socialsData } from '../../data/socialsData';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 import "./Navbar.css";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 
@@ -35,6 +36,12 @@ export default function Navbar() {
                   <FaGithub size={35} aria-label="Github"/>
                 </a>
               )}
+                <a
+                  onClick={() => window.open(`mailto: denzel.samala@gmail.com`, "_blank"  )} className="mail"
+                >
+                  <MdEmail size={35}/>
+                </a>
+
             </div>
             <div className="menu-items">
                 <li><NavLink to="/#skills" smooth={true} spy='true' duration={2000}>Skills</NavLink></li>

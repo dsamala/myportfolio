@@ -131,6 +131,10 @@
   height: 45px;
 }
 
+.mail{
+  cursor: pointer;
+}
+
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
   position: relative;

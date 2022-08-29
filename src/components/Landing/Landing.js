@@ -34,15 +34,6 @@ export default function Landing() {
                         className="buttons">
                             <Button variant="contained" className="buttons">Download CV</Button>
                     </a>
-                    <NavLink 
-                        to="/#contacts"
-                        smooth={true}
-                        spy='true'
-                        duration={2000}
-                        className="buttons"
-                        >
-                            <Button variant="contained">Contact</Button>
-                    </NavLink>
                     </div>
                 </div>
             </div>

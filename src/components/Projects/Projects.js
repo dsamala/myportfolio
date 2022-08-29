@@ -26,11 +26,15 @@ export default function Projects() {
                       <a href={project.demo} target="_blank" rel="noreferrer">
                         <FaPlay
                           id={project.id}
+                          size={35}
+                          color="black"
                         />
                       </a>
                       <a href={project.code} target="_blank" rel="noreferrer">
                         <FaCode
                           id={project.id}
+                          size={35}
+                          color="black"
                         />
                       </a>
                       <p className="project-desc">
