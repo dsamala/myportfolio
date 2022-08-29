@@ -37,7 +37,7 @@ export default function Navbar() {
                 </a>
               )}
                 <a
-                  onClick={() => window.open(`mailto: denzel.samala@gmail.com`, "_blank"  )} className="mail"
+                  href="mailto:denzel.samala@gmail.com" className="mail"
                 >
                   <MdEmail size={35}/>
                 </a>
