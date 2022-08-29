@@ -5,34 +5,6 @@ import placeholder from "../../assets/png/placeholder.png"
 import './Projects.css';
 
 
-// export default function Projects() {
-//   return (
-//     <div>
-//       {projectsData.length > 0 && (
-//         <div className="projects" id="projects">
-//           <div className="projects-header">
-//             <h1>Projects</h1>
-//           </div>
-//           <div className="projects-body">
-//             <div className="projects-bodyContainer">
-//               {projectsData.map(project => (  
-//                 <ProjectCard 
-//                   id={project.id}
-//                   projectName={project.projectName}
-//                   projectDesc={project.projectDesc}
-//                   code={project.code}
-//                   demo={project.demo}
-//                 />
-//               ))}
-//             </div>
-//           </div>
-//         </div>  
-//       )}
-//     </div>
-//   )
-// }
-
-
 export default function Projects() {
   return (
     <div>

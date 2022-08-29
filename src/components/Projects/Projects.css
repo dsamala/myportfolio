@@ -143,3 +143,7 @@
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
 }
+
+.projectCard:hover .project-desc{
+    transform: translate(-2%,40%);
+}

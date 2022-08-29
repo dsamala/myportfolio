@@ -1,4 +1,6 @@
 import React from 'react'
+import { socialsData } from '../../data/socialsData';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import "./Navbar.css";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 
@@ -12,8 +14,27 @@ export default function Navbar() {
               <span class="line line2"></span>
               <span class="line line3"></span>
             </div>
-            <div class="logo">
-              <h1>DS</h1>
+            <div class="socialmedia">
+              {socialsData.linkedIn && (
+                <a
+                  href={socialsData.linkedIn}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='socialIcon'
+                >
+                  <FaLinkedinIn size={35} aria-label="LinkedIn"/>
+                </a>
+              )}
+              {socialsData.github && (
+                <a
+                  href={socialsData.github}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='socialIcon'
+                >
+                  <FaGithub size={35} aria-label="Github"/>
+                </a>
+              )}
             </div>
             <div className="menu-items">
                 <li><NavLink to="/#skills" smooth={true} spy='true' duration={2000}>Skills</NavLink></li>

@@ -116,12 +116,19 @@
   font-weight: 500;
 }
 
-.logo {
+.socialmedia {
   position: absolute;
   top: 5px;
   right: 15px;
   font-size: 1.2rem;
   color: #0e2431;
+  margin-top: 10px;
+}
+
+
+.socialIcon {
+  width: 45px;
+  height: 45px;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
