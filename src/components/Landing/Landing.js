@@ -1,6 +1,5 @@
 import React from 'react'
 import { headerData } from '../../data/headerData';
-import { NavLink } from 'react-router-dom';
 import "./Landing.css";
 import { Button } from '@mui/material';
 
